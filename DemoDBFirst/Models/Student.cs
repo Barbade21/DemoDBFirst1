@@ -16,4 +16,11 @@ namespace DemoDBFirst.Models
         [Range(1, 120)]
         public int Age { get; set; }
     }
+
+    public class Status
+    {
+        [Required]
+        public int StatusId { get; set; }
+        public string StatusName { get; set; }
+    }
 }
