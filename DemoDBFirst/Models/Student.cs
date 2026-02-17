@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Security.Policy;
 
 namespace DemoDBFirst.Models
 {
@@ -22,5 +23,12 @@ namespace DemoDBFirst.Models
         [Required]
         public int StatusId { get; set; }
         public string StatusName { get; set; }
+    }
+
+    public class  studentdto
+    {
+        public int Id { get; set; }
+        public string StatusName { get; set; }
+
     }
 }
